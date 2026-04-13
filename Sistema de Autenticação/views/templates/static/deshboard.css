@@ -1,0 +1,34 @@
+*{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("fundo.png");
+    background-size: cover;       /* FAZ A IMAGEM COBRIR TODA A TELA */
+    background-position: center;  /* CENTRALIZA */
+    background-repeat: no-repeat; /* NÃO REPETE */
+    height: 100vh;                /* ALTURA TOTAL DA TELA */
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    width: 130px;        
+    height: 130px;       
+    border-radius: 50%;  
+    object-fit: cover; 
+
+}
