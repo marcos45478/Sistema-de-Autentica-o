@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='unnamed.jpg') }}" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='unnamed.jpg') }}" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="/dashboard">Início</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <div class="txt">
+            <h1>Bem-vindo {{ usuario.nome or usuario.email }}</h1>
+            <p>Acesso ao painel protegido com autenticação segura e controle de acesso.</p>
+            <p>Último acesso: {{ usuario.ultimo_login or 'Primeiro acesso' }}</p>
+            <p>Status: {{ 'Ativo' if usuario.ativo else 'Bloqueado' }}</p>
+        </div>
+    </div>
+</body>
+</html>
