@@ -142,10 +142,10 @@ http://127.0.0.1:5001/
 ## 🔒 Regras de Segurança
 
 - [x] **Hash de Senha**: Senhas armazenadas com hash SHA-256
-- [ ] **Tentativas Limitadas**: Máximo 3 tentativas de login 
-- [ ] **Horário Restrito**: Acesso permitido apenas das 08h às 18h
+- [x] **Tentativas Limitadas**: Máximo 3 tentativas de login 
+- [x] **Horário Restrito**: Acesso permitido apenas das 08h às 18h
 - [x] **Sessão Segura**: Uso de `session` do Flask com secret_key
-- [ ] **Validação de Entrada**: Sanitização de dados de formulário
+- [x] **Validação de Entrada**: Sanitização de dados de formulário
 
 ## 🧪 Testes
 
