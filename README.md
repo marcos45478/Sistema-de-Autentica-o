@@ -141,11 +141,11 @@ http://127.0.0.1:5001/
 
 ## 🔒 Regras de Segurança
 
-- **Hash de Senha**: Senhas armazenadas com hash SHA-256
-- **Tentativas Limitadas**: Máximo 3 tentativas de login
-- **Horário Restrito**: Acesso permitido apenas das 08h às 18h
-- **Sessão Segura**: Uso de `session` do Flask com secret_key
-- **Validação de Entrada**: Sanitização de dados de formulário
+- [x]**Hash de Senha**: Senhas armazenadas com hash SHA-256
+- [ ]**Tentativas Limitadas**: Máximo 3 tentativas de login 
+- [ ]**Horário Restrito**: Acesso permitido apenas das 08h às 18h
+- [x]**Sessão Segura**: Uso de `session` do Flask com secret_key
+- [ ]**Validação de Entrada**: Sanitização de dados de formulário
 
 ## 🧪 Testes
 
@@ -190,14 +190,6 @@ sistema-autenticacao/
 3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)
 4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 📞 Suporte
-
-Para dúvidas ou problemas, abra uma issue no repositório ou entre em contato com a equipe de desenvolvimento.
 
 ---
 
